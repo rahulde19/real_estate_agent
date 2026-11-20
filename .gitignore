@@ -8,3 +8,4 @@ data/*.db
 data/*.jsonl
 .DS_Store
 .claude/
+.streamlit/secrets.toml

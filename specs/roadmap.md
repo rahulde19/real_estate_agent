@@ -221,8 +221,8 @@ Goal: a public repository and a live demo that someone can open from a portfolio
 - [x] UI polish for a first-time visitor: prefilled example (Taramani), what the app does in two lines, a demo notice with the data date. Checked with Streamlit's test harness only, not looked at in a browser; the confidence and closest-miss sections were not changed
 
 ### 9.3 Deploy
-- [ ] Deploy on Streamlit Community Cloud with keys in its secrets store
-- [ ] GitHub Actions: run the offline tests on every push
+- [ ] Deploy on Streamlit Community Cloud with keys in its secrets store (prepared: `streamlit_app.py` entry point, `uv.lock` regenerated, steps in `docs/README.md`; needs the user to push to GitHub and create the app, which I cannot do)
+- [x] GitHub Actions: run the offline tests on every push (`.github/workflows/tests.yml`; its install-and-test steps passed in a clean local venv with no keys, but the workflow itself has not run on GitHub yet)
 - [ ] Smoke-test the deployed app end to end
 
 ### 9.4 Portfolio write-up
@@ -230,21 +230,3 @@ Goal: a public repository and a live demo that someone can open from a portfolio
 - [ ] A short "what I would do next" section taken from the list below
 
 ---
-
-## After shipping (optional)
-
-Not needed to ship. Each item is independent.
-
-- [ ] Commute from a maps / routing API
-- [ ] Intake as a chat agent (LangGraph interrupt) with a SQLite checkpointer
-- [ ] Scraper tools (`search_source`, `reddit_search`, `fetch_page`) with an allowed-domain list, then `[extraction] evidence_domains`
-- [ ] Orchestrator loop with iteration, token and time caps
-- [ ] Hard filters split into an early pass and a final pass
-- [ ] Verifier that flags weak points and lowers the confidence tag
-- [ ] RAG vault of stable area facts
-- [ ] Tracing per node
-- [ ] Latent "Top 3" and the devil's-advocate alternative
-- [ ] LLM model tiers (cheaper for extraction, stronger for the explanation)
-- [ ] Locality-level costs and per-city rulebook values
-
-Dropped: Postgres (SQLite is the store), Redis, FastAPI, and the separate `extraction_snapshots` / `evidence_items` / `score_runs` tables.

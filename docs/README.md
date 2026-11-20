@@ -38,6 +38,16 @@ data/run_log.jsonl         one line per app run: calls, tokens, seconds (git-ign
 evals/golden/              golden set for the evaluation phase: pages.json (42 pages with answer keys), profiles.json, README.md (how the keys were made), review.md
 tests/
 ```
+**Deploying the demo (Streamlit Community Cloud)**: push the repository to GitHub, create an app there with main file `streamlit_app.py` (it adds `src/` to the import path, so the package need not be installed), Python 3.11 or newer, and put the keys in the app's Secrets box, never in the repository:
+
+```
+GEMINI_API_KEY = "your-key"
+MODEL = "gemini-3.5-flash-lite"
+DEMO_MODE = "1"
+```
+
+Top-level secrets reach the app as environment variables, which is where `config.py` reads them. The daily run counter is a local file and resets when the app restarts. `.github/workflows/tests.yml` runs the offline tests on every push (no keys needed).
+
 **Demo mode** (`DEMO_MODE=1`, needs only `GEMINI_API_KEY` and `MODEL`): serves the saved Chennai search with saved model answers from `data/demo_extractions.json`, so a run makes no search and no extraction call, only the explanation call. Limits: 3 runs per session, 50 per UTC day (`DEMO_SESSION_RUNS`, `DEMO_DAILY_RUNS`). Rebuild the saved answers after a prompt change with `scripts/build_demo_data.py` (dry run by default; `--yes` makes about 1 Gemini call).
 
 Default `SEARCH_SOURCE=sample` reads a saved Chennai-only search; other cities need `SEARCH_SOURCE=live` (the app says so instead of showing wrong results).
