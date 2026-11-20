@@ -1,0 +1,253 @@
+{
+ "captured_at": "2026-11-20T19:14:41+00:00",
+ "prompt_version": "f408fc09ed",
+ "model_id": "gemini-3.5-flash-lite",
+ "source": "tavily_live_chennai.json",
+ "pages": 22,
+ "stats": {
+  "reused": 0,
+  "extracted": 5,
+  "failed": 0,
+  "skipped": 17,
+  "calls": 1
+ },
+ "documents": [
+  {
+   "url": "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-chennai-sln3c519i9gc",
+   "answer": {
+    "source_type": "builder",
+    "listings": [
+     {
+      "name": "PG Near Taramani",
+      "url": "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-chennai-sln3c519i9gc",
+      "kind": "pg",
+      "area": "Taramani, Chennai",
+      "rent": 7000.0,
+      "maintenance": null,
+      "extras": null,
+      "deposit": null,
+      "brokerage": null,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": null,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": null,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "medium",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     }
+    ],
+    "evidence": []
+   }
+  },
+  {
+   "url": "https://www.magicbricks.com/pg-in-tharamani-chennai-pppfr",
+   "answer": {
+    "source_type": "ad",
+    "listings": [
+     {
+      "name": "PG in Tharamani",
+      "url": "https://www.magicbricks.com/pg-in-tharamani-chennai-pppfr",
+      "kind": "pg",
+      "area": "Tharamani, Chennai",
+      "rent": 5500.0,
+      "maintenance": null,
+      "extras": null,
+      "deposit": null,
+      "brokerage": null,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": true,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": null,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "medium",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     }
+    ],
+    "evidence": []
+   }
+  },
+  {
+   "url": "https://www.nobroker.in/property/rent/chennai/Velachery%20-%20Taluk%20Office%2C%20Taramani%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India?searchParam=W3sicGxhY2VOYW1lIjoiVmVsYWNoZXJ5IC0gVGFsdWsgT2ZmaWNlLCBUYXJhbWFuaSwgQ2hlbm5haSwgVGFtaWwgTmFkdSwgSW5kaWEiLCJwbGFjZUlkIjoiQ2hJSkUxNHpINGxuVWpvUnlZRllUTTdSWUswIiwibGF0IjoiMTIuOTgzIiwibG9uIjoiODAuMjQ0In1d&sharedAccomodation=0&pageNo=3",
+   "answer": {
+    "source_type": "ad",
+    "listings": [
+     {
+      "name": "1 BHK House in Taramani",
+      "url": "https://www.nobroker.in/property/rent/chennai/Velachery%20-%20Taluk%20Office%2C%20Taramani%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India?searchParam=W3sicGxhY2VOYW1lIjoiVmVsYWNoZXJ5IC0gVGFsdWsgT2ZmaWNlLCBUYXJhbWFuaSwgQ2hlbm5haSwgVGFtaWwgTmFkdSwgSW5kaWEiLCJwbGFjZUlkIjoiQ2hJSkUxNHpINGxuVWpvUnlZRllUTTdSWUswIiwibGF0IjoiMTIuOTgzIiwibG9uIjoiODAuMjQ0In1d&sharedAccomodation=0&pageNo=3",
+      "kind": "flat",
+      "area": "Taramani",
+      "rent": 15000.0,
+      "maintenance": 0.0,
+      "extras": null,
+      "deposit": null,
+      "brokerage": null,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": null,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": 1,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "high",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     }
+    ],
+    "evidence": []
+   }
+  },
+  {
+   "url": "https://www.magicbricks.com/house-on-rent-without-brokerage-in-tharamani-chennai-pppfr",
+   "answer": {
+    "source_type": "ad",
+    "listings": [
+     {
+      "name": "House for rent in Tharamani Chennai",
+      "url": "https://www.magicbricks.com/house-on-rent-without-brokerage-in-tharamani-chennai-pppfr",
+      "kind": "flat",
+      "area": "Tharamani Chennai",
+      "rent": 170000.0,
+      "maintenance": null,
+      "extras": null,
+      "deposit": 1700000.0,
+      "brokerage": 0.0,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": null,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": null,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "medium",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     }
+    ],
+    "evidence": []
+   }
+  },
+  {
+   "url": "https://www.99acres.com/property-for-rent-in-tharamani-chennai-south-without-brokerage-ffid",
+   "answer": {
+    "source_type": "ad",
+    "listings": [
+     {
+      "name": "1 Bedroom House in Taramani, OMR",
+      "url": "https://www.99acres.com/property-for-rent-in-tharamani-chennai-south-without-brokerage-ffid",
+      "kind": "flat",
+      "area": "Taramani, OMR",
+      "rent": 13001.0,
+      "maintenance": null,
+      "extras": null,
+      "deposit": 50000.0,
+      "brokerage": 0.0,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": null,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": 1,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "high",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     },
+     {
+      "name": "House for rent in Taramani, OMR",
+      "url": "https://www.99acres.com/property-for-rent-in-tharamani-chennai-south-without-brokerage-ffid",
+      "kind": "flat",
+      "area": "Taramani, OMR",
+      "rent": 10000.0,
+      "maintenance": null,
+      "extras": null,
+      "deposit": 30000.0,
+      "brokerage": 0.0,
+      "lock_in_months": null,
+      "notice_months": null,
+      "furnishing": null,
+      "private_room": null,
+      "meals_included": null,
+      "kitchen_access": null,
+      "vibe": null,
+      "gender_restricted": null,
+      "commute_minutes": null,
+      "building_name": null,
+      "phone": null,
+      "bhk": null,
+      "sharing": null,
+      "lat": null,
+      "lng": null,
+      "extraction_confidence": "high",
+      "provenance": null,
+      "observations": [],
+      "missing_fields": [],
+      "property_id": null,
+      "evidence": []
+     }
+    ],
+    "evidence": []
+   }
+  }
+ ]
+}

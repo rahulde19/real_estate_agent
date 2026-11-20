@@ -25,9 +25,10 @@ src/homefinder/
   config/    config.py (paths, env, loader), rulebook.toml (weights, money, scoring thresholds, lifestyle values, decision, defaults - edit here), rulebook.md
   core/      formulas.py, rules.py, dedup.py, evidence.py, prefilter.py   (deterministic logic)
   agent/     graph.py, extraction.py, state.py, prompts.py  (LangGraph)
-  services/  search.py (Tavily), llm.py (Gemini), documents.py (SQLite store), city_costs.py (cost-of-living CSV loader), metrics.py (LLM call/token meter)
+  services/  demo.py (demo mode: saved search and answers, daily run limit), search.py (Tavily), llm.py (Gemini), documents.py (SQLite store), city_costs.py (cost-of-living CSV loader), metrics.py (LLM call/token meter)
   evals/     golden.py (loads the golden set), extraction_eval.py, ranking_eval.py, explanation_eval.py
   ui/app.py  Streamlit page
+scripts/build_demo_data.py         builds data/demo_extractions.json for demo mode (calls Gemini only with --yes)
 scripts/snapshot_ranking.py        writes the ranking snapshot evals/golden/expected.json (offline)
 scripts/eval_extraction.py        scores the real model against the golden set (calls Gemini only with --yes; writes docs/evals/)
 scripts/benchmark_extraction.py   offline benchmark of extraction options (no LLM); writes docs/benchmarks/phase6_results.md
@@ -37,6 +38,8 @@ data/run_log.jsonl         one line per app run: calls, tokens, seconds (git-ign
 evals/golden/              golden set for the evaluation phase: pages.json (42 pages with answer keys), profiles.json, README.md (how the keys were made), review.md
 tests/
 ```
+**Demo mode** (`DEMO_MODE=1`, needs only `GEMINI_API_KEY` and `MODEL`): serves the saved Chennai search with saved model answers from `data/demo_extractions.json`, so a run makes no search and no extraction call, only the explanation call. Limits: 3 runs per session, 50 per UTC day (`DEMO_SESSION_RUNS`, `DEMO_DAILY_RUNS`). Rebuild the saved answers after a prompt change with `scripts/build_demo_data.py` (dry run by default; `--yes` makes about 1 Gemini call).
+
 Default `SEARCH_SOURCE=sample` reads a saved Chennai-only search; other cities need `SEARCH_SOURCE=live` (the app says so instead of showing wrong results).
 Each option shows a confidence tag, flags ("deposit estimated", "re-verify") and its sources; if fewer than 7 pass your limits, the closest misses are listed with the limit each one failed.
 Listings come from web snippets; verify before paying anything. Defaults in `[defaults]` are assumptions, not market data.

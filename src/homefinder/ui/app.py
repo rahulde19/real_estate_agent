@@ -5,20 +5,32 @@ import pandas as pd
 import streamlit as st
 
 from homefinder.agent.graph import build_graph
-from homefinder.config.config import RUN_LOG_PATH, SEARCH_SOURCE, load_rulebook, require_keys, sample_supports
+from homefinder.config.config import (DEMO_DAILY_RUNS, DEMO_MODE, DEMO_SESSION_RUNS, RUN_LOG_PATH, SEARCH_SOURCE, load_rulebook,
+                                      require_keys, sample_supports)
 from homefinder.core.evidence import caveats_by_criterion
 from homefinder.schemas import UserProfile
+from homefinder.services.demo import DailyLimiter, DemoDataMissing, demo_graph
 from homefinder.services.search import sample_mode_message
 
 st.set_page_config(page_title="Home Finder", page_icon="🏠")
 st.title("🏠 Home Finder")
-st.caption("Tell us about your move. We'll search the web and suggest your top 7 PGs / flats in your city.")
-if SEARCH_SOURCE != "live":
+st.markdown("Tell us about your move and we'll find PGs and flats on the web, then rank your **top 7** on real monthly cost, "
+            "upfront cash, lifestyle fit and what reviewers say.  \nCode does the maths and the ranking; the AI only reads the "
+            "listings and explains the result. Every option shows where it came from and how sure we are.")
+if DEMO_MODE:
+    st.info(f"**Demo.** This uses a saved Chennai search, not a live one, and the form is prefilled with an example: just press "
+            f"*Find my home*. Limits: {DEMO_SESSION_RUNS} runs per visit, {DEMO_DAILY_RUNS} per day.")
+elif SEARCH_SOURCE != "live":
     st.caption("Sample search mode: saved data covers Chennai only. Set SEARCH_SOURCE=live for other cities.")
 
-if missing := require_keys():
+if missing := [m for m in require_keys() if not (DEMO_MODE and m == "TAVILY_API_KEY")]:
     st.error(f"Missing in .env: {', '.join(missing)}")
     st.stop()
+
+@st.cache_resource
+def limiter() -> DailyLimiter:
+    return DailyLimiter(per_day=DEMO_DAILY_RUNS)
+
 
 MUST = "Must-have"
 MISS = {"budget": "Monthly budget", "upfront": "Upfront cash", "commute": "Commute", "must_have": "Must-have"}
@@ -50,8 +62,10 @@ def details(c, aspect_criteria):
         st.write(f"- What others say ({criterion}): " + "; ".join(lines))
 
 with st.form("intake"):
-    city = st.text_input("City you are moving to", "Chennai")  # "Chennai" is the dev default
-    work = st.text_input("Work location (area or address)", placeholder="e.g. Tidel Park, Taramani")
+    city = st.text_input("City you are moving to", "Chennai", disabled=DEMO_MODE,
+                         help="The demo's saved search covers Chennai only." if DEMO_MODE else None)
+    work = st.text_input("Work location (area or address)", value="Taramani" if DEMO_MODE else "",
+                         placeholder="e.g. Tidel Park, Taramani")
     c1, c2 = st.columns(2)
     budget = c1.number_input("Monthly budget ceiling (₹)", min_value=1000, value=15000, step=500)
     cash = c2.number_input("Upfront cash available (₹)", min_value=1000, value=60000, step=5000)
@@ -82,7 +96,16 @@ if go:
     if not city.strip() or not work.strip():
         st.warning("Please enter your city and work location.")
         st.stop()
-    if SEARCH_SOURCE != "live" and not sample_supports(city):
+    if DEMO_MODE:
+        st.session_state["runs"] = st.session_state.get("runs", 0)
+        if st.session_state["runs"] >= DEMO_SESSION_RUNS:
+            st.info(f"You have used the {DEMO_SESSION_RUNS} demo runs for this visit. Reload the page to start a new visit.")
+            st.stop()
+        if not limiter().try_run():
+            st.info("The demo has reached today's run limit. Please try again tomorrow.")
+            st.stop()
+        st.session_state["runs"] += 1
+    elif SEARCH_SOURCE != "live" and not sample_supports(city):
         st.error(sample_mode_message(city.strip()))
         st.stop()
     n = 1 if mover == "solo" else max(2 if mover == "friends" else 1, int(size))
@@ -96,7 +119,14 @@ if go:
     )
     with st.spinner("Searching, reading listings and scoring… (about a minute)"):
         try:
-            state = build_graph(run_log=RUN_LOG_PATH).invoke({"profile": profile})
+            if DEMO_MODE:
+                graph, demo_data = demo_graph(run_log=RUN_LOG_PATH)
+            else:
+                graph = build_graph(run_log=RUN_LOG_PATH)
+            state = graph.invoke({"profile": profile})
+        except DemoDataMissing as e:
+            st.error(str(e))
+            st.stop()
         except Exception as e:  # surface API/network problems to the user
             st.error(f"Something went wrong: {e}")
             st.stop()
@@ -114,6 +144,9 @@ if go:
     aspects = load_rulebook()["evidence"]["aspect_criteria"]
     if stats.get("duplicates_merged"):
         st.caption(f"{stats['duplicates_merged']} repeated ads were merged into the properties below.")
+    if DEMO_MODE:
+        st.caption(f"Demo data: a saved Chennai search captured {demo_data['captured_at'][:10]}, read with the model "
+                   f"`{demo_data['model_id']}`. Prices may have changed since.")
     st.subheader("Our suggestion")
     if not d.ranked:
         st.warning(f"No listings passed your filters ({len(state['listings'])} found, "

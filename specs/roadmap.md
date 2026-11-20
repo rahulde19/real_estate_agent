@@ -216,9 +216,9 @@ Goal: a public repository and a live demo that someone can open from a portfolio
 - [x] Commute weight (20% of the score does nothing today): the UI now says so under "Our suggestion"; weights unchanged
 
 ### 9.2 Demo mode
-- [ ] Ship the Chennai sample with its saved extractions, so the public demo costs one explanation call per run
-- [ ] Per-session and per-day run limits; live search only with the visitor's own keys or switched off
-- [ ] UI polish for a first-time visitor: prefilled example, what the app does in two lines, the confidence and closest-miss sections easy to find
+- [x] Ship the Chennai sample with its saved extractions, so the public demo costs one explanation call per run (`DEMO_MODE=1`; `src/homefinder/services/demo.py`; `data/demo_extractions.json` built by `scripts/build_demo_data.py` with 1 Gemini call: only 5 of the 22 saved pages pass the prefilter, so the demo has 5 listings to rank)
+- [x] Per-session (3) and per-day (50, all visitors, UTC) run limits; live search is switched off in demo mode (a visitor's own keys are not supported)
+- [x] UI polish for a first-time visitor: prefilled example (Taramani), what the app does in two lines, a demo notice with the data date. Checked with Streamlit's test harness only, not looked at in a browser; the confidence and closest-miss sections were not changed
 
 ### 9.3 Deploy
 - [ ] Deploy on Streamlit Community Cloud with keys in its secrets store
