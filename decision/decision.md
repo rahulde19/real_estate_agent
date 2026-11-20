@@ -319,3 +319,8 @@ Numbered in the order decisions were made. Each entry has exactly three bullets:
 - Decision: No commit yet. `tavily_sample/` and `evals/golden/pages.json` hold scraped third-party page text, and `data/livingcost_india_all_inr.csv` has no stated source licence; whether they go in a public repo is the user's call.
 - Action: `git init`, `git add -A`. Checked that `.env`, `data/homefinder.db`, `data/run_log.jsonl`, `.claude/` and `.DS_Store` are ignored, that `.env.example` holds placeholders only, and that no key-shaped strings (`AIza…`, `tvly-…`, `sk-…`) are in any file outside `.venv`. 78 files staged.
 - Reasoning: A commit in a public repo is hard to take back, and publishing other sites' text or a dataset without knowing its licence is the kind of thing worth a person's decision.
+
+### 66. (21-11) First commit made with the scraped pages and the cost CSV included
+- Decision: Keep `tavily_sample/`, `evals/golden/pages.json` and `data/livingcost_india_all_inr.csv` in the repository.
+- Action: Committed all staged files as the first commit (local only, not pushed); roadmap 9.1 ticked.
+- Reasoning: User's call. Left open: the licence of the scraped page text and of the CSV is not verified, so check it again before making the repository public (9.3).

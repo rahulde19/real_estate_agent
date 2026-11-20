@@ -211,7 +211,7 @@ Goal: a public repository and a live demo that someone can open from a portfolio
 
 ### 9.1 Clean up
 - [x] `git init` (done), `.gitignore` check (`.env`, database, run log, `.claude/`, `.DS_Store` are ignored; no key patterns in the tree), MIT licence (`LICENSE`)
-- [ ] First commit: files are staged but not committed, waiting for the user's call on keeping `tavily_sample/`, `evals/golden/pages.json` (scraped third-party text) and `data/livingcost_india_all_inr.csv` (source licence unknown) in a public repo
+- [x] First commit (21-11): made with `tavily_sample/`, `evals/golden/pages.json` and `data/livingcost_india_all_inr.csv` included, by the user's decision (source licences of the scraped text and the CSV are not verified)
 - [x] Fix leftovers: `pyproject.toml` description and `pandas` fixed; `docs/response1/` kept as a historical record with a note at the top (its text describes the code of 08-11)
 - [x] Commute weight (20% of the score does nothing today): the UI now says so under "Our suggestion"; weights unchanged
 
