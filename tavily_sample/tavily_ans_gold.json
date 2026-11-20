@@ -1,0 +1,132 @@
+{
+ "label": "Hand-made answer key: written by Claude on 15-11-2026 by reading each page. It stands in for the LLM in offline tests and benchmarks; it is a judgment, not ground truth from the sites. 'judgment': true marks listings built from a price range or 'starts from' price.",
+ "source": "tavily_ans.json",
+ "pages": {
+  "https://zolostays.com/pg-in-chennai": {
+   "note": "price ranges by sharing type; deposit is one month's rent",
+   "listings": [
+    {
+     "name": "Zolostays Chennai PG, private room (from)",
+     "kind": "pg",
+     "rent": 10455,
+     "deposit": 10455,
+     "private_room": true,
+     "judgment": true
+    },
+    {
+     "name": "Zolostays Chennai PG, 2-sharing (from)",
+     "kind": "pg",
+     "rent": 5994,
+     "deposit": 5994,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Zolostays Chennai PG, 3-sharing (from)",
+     "kind": "pg",
+     "rent": 5265,
+     "deposit": 5265,
+     "private_room": false,
+     "judgment": true
+    }
+   ]
+  },
+  "https://zolostays.com/pgs-in-velachery-chennai": {
+   "note": "Velachery PG prices by sharing type; food not included; deposit one month's rent",
+   "listings": [
+    {
+     "name": "Velachery PG, 3-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 9460,
+     "area": "Velachery",
+     "deposit": 9460,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, 4-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 8858,
+     "area": "Velachery",
+     "deposit": 8858,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, 2-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 11610,
+     "area": "Velachery",
+     "deposit": 11610,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, private room (Zolostays)",
+     "kind": "pg",
+     "rent": 19178,
+     "area": "Velachery",
+     "deposit": 19178,
+     "meals_included": false,
+     "private_room": true,
+     "judgment": true
+    }
+   ]
+  },
+  "https://houssed.com/rent/pg/listing/chennai-perungudi": {
+   "note": "Perungudi furnished PGs, co-ed and boys-only",
+   "listings": [
+    {
+     "name": "Perungudi co-ed PG (Houssed)",
+     "kind": "pg",
+     "rent": 14850,
+     "area": "Perungudi",
+     "furnishing": "furnished",
+     "gender_restricted": false,
+     "judgment": true
+    },
+    {
+     "name": "Perungudi boys-only PG (Houssed)",
+     "kind": "pg",
+     "rent": 30100,
+     "area": "Perungudi",
+     "furnishing": "furnished",
+     "gender_restricted": true,
+     "judgment": true
+    }
+   ]
+  },
+  "https://housing.com/rent/18641576-1000-sqft-2-bhk-apartment-on-rent-in-kodambakkam-chennai": {
+   "note": "single flat listing",
+   "listings": [
+    {
+     "name": "2 BHK Flat, Kodambakkam (Housing.com)",
+     "kind": "flat",
+     "rent": 20000,
+     "area": "Kodambakkam",
+     "furnishing": "unfurnished"
+    }
+   ]
+  },
+  "https://housing.com/rent/19621284-1100-sqft-2-bhk-apartment-on-rent-in-chetpet-chennai": {
+   "note": "single flat listing with deposit",
+   "listings": [
+    {
+     "name": "2 BHK Flat, Chetpet (Housing.com)",
+     "kind": "flat",
+     "rent": 40000,
+     "area": "Chetpet",
+     "furnishing": "furnished",
+     "deposit": 200000
+    }
+   ]
+  },
+  "https://www.nobroker.in/2bhk-flats-for-rent-in-chennai_chennai": {
+   "note": "generic market range, no specific listing",
+   "listings": []
+  }
+ }
+}

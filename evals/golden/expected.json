@@ -1,0 +1,163 @@
+{
+ "note": "Ranking snapshot of the pipeline on the golden pages with the answer keys as extractor (scripts/snapshot_ranking.py). It is a regression guard: it says the ranking did not change, not that it is right. 'reviewed' stays false until a person has read it.",
+ "reviewed": false,
+ "profiles": {
+  "solo_tight_cash": {
+   "ranked": [
+    {
+     "name": "PG in Tharamani (MagicBricks)",
+     "score": 7.94
+    },
+    {
+     "name": "Lakshmi Ladies PG, double sharing",
+     "score": 7.05
+    },
+    {
+     "name": "Maple Living Velachery, double room",
+     "score": 6.01
+    },
+    {
+     "name": "Zolostays Chennai PG, 3-sharing (from)",
+     "score": 5.91
+    },
+    {
+     "name": "Zolostays Chennai PG, 2-sharing (from)",
+     "score": 5.45
+    },
+    {
+     "name": "Stanza Living PG near Taramani",
+     "score": 4.81
+    }
+   ],
+   "recommended_kind": "pg",
+   "closest_misses": [
+    {
+     "name": "Velachery PG, 4-sharing (Zolostays)",
+     "failed": "budget"
+    }
+   ]
+  },
+  "solo_comfortable": {
+   "ranked": [
+    {
+     "name": "Maple Living Velachery, single AC room",
+     "score": 7.84
+    },
+    {
+     "name": "PG in Tharamani (MagicBricks)",
+     "score": 7.75
+    },
+    {
+     "name": "Zolostays Chennai PG, private room (from)",
+     "score": 7.72
+    },
+    {
+     "name": "Stanza Living PG near Taramani",
+     "score": 7.57
+    },
+    {
+     "name": "Perungudi co-ed PG (Houssed)",
+     "score": 6.38
+    },
+    {
+     "name": "1 Bedroom House for rent in Taramani, OMR (10,000)",
+     "score": 5.28
+    },
+    {
+     "name": "Velachery PG, private room (Zolostays)",
+     "score": 4.87
+    }
+   ],
+   "recommended_kind": "pg",
+   "closest_misses": []
+  },
+  "three_friends_sharing": {
+   "ranked": [
+    {
+     "name": "1 BHK flat in Velachery",
+     "score": 7.93
+    },
+    {
+     "name": "2 BHK Flat, Kodambakkam (Housing.com)",
+     "score": 7.65
+    },
+    {
+     "name": "Zolostays Chennai PG, 2-sharing (from)",
+     "score": 7.57
+    },
+    {
+     "name": "Zolostays Chennai PG, 3-sharing (from)",
+     "score": 7.57
+    },
+    {
+     "name": "Velachery PG, 4-sharing (Zolostays)",
+     "score": 7.57
+    },
+    {
+     "name": "Stanza Living PG near Taramani",
+     "score": 7.57
+    },
+    {
+     "name": "PG in Tharamani (MagicBricks)",
+     "score": 7.57
+    }
+   ],
+   "recommended_kind": "flat",
+   "closest_misses": []
+  },
+  "family_of_four": {
+   "ranked": [
+    {
+     "name": "1 BHK flat in Velachery",
+     "score": 7.93
+    },
+    {
+     "name": "2 BHK Flat, Kodambakkam (Housing.com)",
+     "score": 7.65
+    },
+    {
+     "name": "1 BHK Independent House, MGR Salai, Taramani",
+     "score": 7.56
+    },
+    {
+     "name": "Property for rent in Taramani, OMR (13,001)",
+     "score": 7.56
+    },
+    {
+     "name": "1 Bedroom House for rent in Taramani, OMR (10,000)",
+     "score": 7.56
+    }
+   ],
+   "recommended_kind": "flat",
+   "closest_misses": [
+    {
+     "name": "2 BHK Flat, Chetpet (Housing.com)",
+     "failed": "budget"
+    }
+   ]
+  },
+  "short_stay_second_city": {
+   "ranked": [
+    {
+     "name": "Om Sai PG, single room",
+     "score": 7.62
+    }
+   ],
+   "recommended_kind": "pg",
+   "closest_misses": [
+    {
+     "name": "Om Sai PG, double sharing",
+     "failed": "must_have"
+    },
+    {
+     "name": "Om Sai PG, triple sharing",
+     "failed": "must_have"
+    },
+    {
+     "name": "Kothrud PG, double sharing",
+     "failed": "must_have"
+    }
+   ]
+  }
+ }
+}

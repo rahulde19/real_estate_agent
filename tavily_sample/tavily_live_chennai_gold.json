@@ -1,0 +1,142 @@
+{
+ "label": "Hand-made answer key: written by Claude on 15-11-2026 by reading each page. It stands in for the LLM in offline tests and benchmarks; it is a judgment, not ground truth from the sites. 'judgment': true marks listings built from a price range or 'starts from' price.",
+ "source": "tavily_live_chennai.json",
+ "pages": {
+  "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-chennai-sln3c519i9gc": {
+   "note": "'starts from' price for PGs near Taramani",
+   "listings": [
+    {
+     "name": "Stanza Living PG near Taramani",
+     "kind": "pg",
+     "rent": 7000,
+     "area": "Taramani",
+     "judgment": true
+    }
+   ]
+  },
+  "https://www.magicbricks.com/pg-in-tharamani-chennai-pppfr": {
+   "note": "'priced from' Rs 5500 for a PG with tiffin food, wifi",
+   "listings": [
+    {
+     "name": "PG in Tharamani (MagicBricks)",
+     "kind": "pg",
+     "rent": 5500,
+     "area": "Taramani",
+     "meals_included": true,
+     "judgment": true
+    }
+   ]
+  },
+  "https://www.sec.gov/Archives/edgar/data/1058299/000119312511132296/dex101.htm": {
+   "note": "lease deed for office space (SEC filing)",
+   "listings": []
+  },
+  "https://www.mapquest.com/in/punjab/tip-top-pg-paying-guest-809219096": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://rocketreach.co/paying-guest-pg-competitors_b705ca9ac5008d92": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.cnbc.com/2021/10/22/budgeting-for-food-and-rent-if-you-make-35000-per-year.html": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://au.finance.yahoo.com/news/popular-tactic-allowing-aussie-couple-to-save-8000-a-month-for-first-home-deposit-very-hard-to-save-012901460.html": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://tavily.com/knowledge/company/xXOEOTVuyEDV": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.nobroker.in/property/rent/chennai/Velachery%20-%20Taluk%20Office%2C%20Taramani%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India?searchParam=W3sicGxhY2VOYW1lIjoiVmVsYWNoZXJ5IC0gVGFsdWsgT2ZmaWNlLCBUYXJhbWFuaSwgQ2hlbm5haSwgVGFtaWwgTmFkdSwgSW5kaWEiLCJwbGFjZUlkIjoiQ2hJSkUxNHpINGxuVWpvUnlZRllUTTdSWUswIiwibGF0IjoiMTIuOTgzIiwibG9uIjoiODAuMjQ0In1d&sharedAccomodation=0&pageNo=3": {
+   "note": "1 BHK independent house, maintenance included",
+   "listings": [
+    {
+     "name": "1 BHK Independent House, MGR Salai, Taramani",
+     "kind": "flat",
+     "rent": 15000,
+     "area": "Taramani"
+    }
+   ]
+  },
+  "https://www.magicbricks.com/house-on-rent-without-brokerage-in-tharamani-chennai-pppfr": {
+   "note": "house for rent, rent shown as 1.7 Lac, deposit 10 months",
+   "listings": [
+    {
+     "name": "House for rent in Tharamani (MagicBricks)",
+     "kind": "flat",
+     "rent": 170000,
+     "area": "Taramani",
+     "judgment": true
+    }
+   ]
+  },
+  "https://www.99acres.com/property-for-rent-in-tharamani-chennai-south-without-brokerage-ffid": {
+   "note": "two flats on a listing page",
+   "listings": [
+    {
+     "name": "Property for rent in Taramani, OMR (13,001)",
+     "kind": "flat",
+     "rent": 13001,
+     "area": "Taramani",
+     "deposit": 50000,
+     "judgment": true
+    },
+    {
+     "name": "1 Bedroom House for rent in Taramani, OMR (10,000)",
+     "kind": "flat",
+     "rent": 10000,
+     "area": "Taramani",
+     "deposit": 30000
+    }
+   ]
+  },
+  "https://www.cbinsights.com/company/nestoria": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://finance.yahoo.com/news/rent-runway-inc-rent-q3-121559216.html": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://finance.yahoo.com/news/expect-rent-runway-inc-rent-131926485.html": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://finance.yahoo.com/news/earnings-watch-rent-runway-inc-130640875.html": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-taramani-mrts-station-road-new-colony-chennai-slnce3ae17c1": {
+   "note": "text cut off before any price",
+   "listings": []
+  },
+  "https://www.quora.com/Which-is-better-in-Chennai-Taramani-area-Paying-guest-or-sharing-home": {
+   "note": "question title only",
+   "listings": []
+  },
+  "https://tracxn.com/d/companies/pg-and-hostel/__2Jiya9Ub8Z7wfm-ZKZGo8xPsAI7aOXhiHXIug9Lvrg4": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.yelp.com/biz/hi-new-york-city-hostel-new-york": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.yelp.com/biz/green-tortoise-hostel-seattle": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.yelp.com/biz/native-hostel-austin-2": {
+   "note": "not a rental listing",
+   "listings": []
+  },
+  "https://www.yelp.com/biz/waikiki-beachside-hostel-honolulu": {
+   "note": "not a rental listing",
+   "listings": []
+  }
+ }
+}

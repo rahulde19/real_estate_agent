@@ -1,0 +1,1154 @@
+[
+ {
+  "id": "g01",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://zolostays.com/pg-in-chennai",
+  "title": "pg in chennai",
+  "content": "Zolostays lists 74 PG properties in Chennai with rents from about Rs 4,720 to Rs 33,540 per month. Private rooms range from roughly Rs 10,455 to Rs 33,540, two-sharing from Rs 5,994 to Rs 16,922, and three-sharing from Rs 5,265 to Rs 14,362. Rent includes WiFi and housekeeping, electricity is billed on actuals, and the security deposit is one month's rent.",
+  "tags": [
+   "builder",
+   "multi_listing",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "builder",
+   "listings": [
+    {
+     "name": "Zolostays Chennai PG, private room (from)",
+     "kind": "pg",
+     "rent": 10455,
+     "deposit": 10455,
+     "private_room": true,
+     "judgment": true
+    },
+    {
+     "name": "Zolostays Chennai PG, 2-sharing (from)",
+     "kind": "pg",
+     "rent": 5994,
+     "deposit": 5994,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Zolostays Chennai PG, 3-sharing (from)",
+     "kind": "pg",
+     "rent": 5265,
+     "deposit": 5265,
+     "private_room": false,
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "price ranges by sharing type; deposit is one month's rent",
+  "reviewed": "user"
+ },
+ {
+  "id": "g02",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://zolostays.com/pgs-in-velachery-chennai",
+  "title": "pgs in velachery chennai",
+  "content": "PG prices in Velachery span from under Rs 9,000 for shared rooms to about Rs 19,178 for a private room. Three-sharing is listed at Rs 9,460 to Rs 11,571, four-sharing at Rs 8,858 and two-sharing at Rs 11,610. Food is not included, and the deposit is one month's rent, refundable within 15 to 21 working days after move-out.",
+  "tags": [
+   "builder",
+   "multi_listing",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "builder",
+   "listings": [
+    {
+     "name": "Velachery PG, 3-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 9460,
+     "area": "Velachery",
+     "deposit": 9460,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, 4-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 8858,
+     "area": "Velachery",
+     "deposit": 8858,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, 2-sharing (Zolostays)",
+     "kind": "pg",
+     "rent": 11610,
+     "area": "Velachery",
+     "deposit": 11610,
+     "meals_included": false,
+     "private_room": false,
+     "judgment": true
+    },
+    {
+     "name": "Velachery PG, private room (Zolostays)",
+     "kind": "pg",
+     "rent": 19178,
+     "area": "Velachery",
+     "deposit": 19178,
+     "meals_included": false,
+     "private_room": true,
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Velachery PG prices by sharing type; food not included; deposit one month's rent",
+  "reviewed": "user"
+ },
+ {
+  "id": "g03",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://houssed.com/rent/pg/listing/chennai-perungudi",
+  "title": "chennai perungudi PG listings",
+  "content": "Furnished PG listings in Perungudi, Chennai include boys-only and co-ed options. Advertised rents range from about Rs 14,850 for a co-ed PG to Rs 30,100 for a boys-only PG. Figures are indicative averages from verified listings.",
+  "tags": [
+   "ad",
+   "multi_listing",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Perungudi co-ed PG (Houssed)",
+     "kind": "pg",
+     "rent": 14850,
+     "area": "Perungudi",
+     "furnishing": "furnished",
+     "gender_restricted": false,
+     "judgment": true
+    },
+    {
+     "name": "Perungudi boys-only PG (Houssed)",
+     "kind": "pg",
+     "rent": 30100,
+     "area": "Perungudi",
+     "furnishing": "furnished",
+     "gender_restricted": true,
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Perungudi furnished PGs, co-ed and boys-only",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g04",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://housing.com/rent/18641576-1000-sqft-2-bhk-apartment-on-rent-in-kodambakkam-chennai",
+  "title": "2 BHK Flat for Rent in Kodambakkam, Chennai",
+  "content": "An unfurnished 1000 sq.ft 2 BHK in Kodambakkam is listed at Rs 20,000 per month, with lift and power backup, and is available from January 2026. Listing was last updated October 2025.",
+  "tags": [
+   "ad"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "2 BHK Flat, Kodambakkam (Housing.com)",
+     "kind": "flat",
+     "rent": 20000,
+     "area": "Kodambakkam",
+     "furnishing": "unfurnished"
+    }
+   ],
+   "evidence": []
+  },
+  "note": "single flat listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g05",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://housing.com/rent/19621284-1100-sqft-2-bhk-apartment-on-rent-in-chetpet-chennai",
+  "title": "2 BHK Flat for Rent in Chetpet, Chennai",
+  "content": "A fully furnished 1100 sq.ft 2 BHK in Chetpet is listed at Rs 40,000 per month with a security deposit of Rs 2,00,000. Price is marked as not negotiable. Listing was last updated March 2026.",
+  "tags": [
+   "ad"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "2 BHK Flat, Chetpet (Housing.com)",
+     "kind": "flat",
+     "rent": 40000,
+     "area": "Chetpet",
+     "furnishing": "furnished",
+     "deposit": 200000
+    }
+   ],
+   "evidence": []
+  },
+  "note": "single flat listing with deposit",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g06",
+  "origin": "sample",
+  "city": "Chennai",
+  "url": "https://www.nobroker.in/2bhk-flats-for-rent-in-chennai_chennai",
+  "title": "2 BHK Flats for rent in Chennai | NoBroker",
+  "content": "NoBroker reports that typical 2 BHK rent in Chennai ranges from about Rs 3,000 to Rs 15,000 per month, depending on locality, furnishing and building category. The page cites July 2026 market data and notes that prices vary by society type, building age and amenities.",
+  "tags": [
+   "no_listing",
+   "junk"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [],
+   "evidence": []
+  },
+  "note": "generic market range, no specific listing",
+  "reviewed": "user"
+ },
+ {
+  "id": "g07",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-chennai-sln3c519i9gc",
+  "title": "PG Near Taramani, Chennai with Free Food,Wifi & More",
+  "content": "Rent for PGs near Taramani, Chennai generally starts from ₹7,000 per month and increases based on amenities and room occupancy. Stanza Living offers budget,",
+  "tags": [
+   "builder",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "builder",
+   "listings": [
+    {
+     "name": "Stanza Living PG near Taramani",
+     "kind": "pg",
+     "rent": 7000,
+     "area": "Taramani",
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "'starts from' price for PGs near Taramani",
+  "reviewed": "user"
+ },
+ {
+  "id": "g08",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.magicbricks.com/pg-in-tharamani-chennai-pppfr",
+  "title": "27 PG in Tharamani, Chennai - Boys & Girls Paying Guest ...",
+  "content": "... pg PG provides various amenities including Tiffin System food,wifi, TV, parking. The per month rent of this accomodation is priced from Rs 5500. More.",
+  "tags": [
+   "ad",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "PG in Tharamani (MagicBricks)",
+     "kind": "pg",
+     "rent": 5500,
+     "area": "Taramani",
+     "meals_included": true,
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "'priced from' Rs 5500 for a PG with tiffin food, wifi",
+  "reviewed": "user"
+ },
+ {
+  "id": "g09",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.sec.gov/Archives/edgar/data/1058299/000119312511132296/dex101.htm",
+  "title": "Deed of Lease",
+  "content": "The premises bearing Unit No. # 7 – 01, on the 7th floor measuring approximately 25,720 square feet of super built up area in the multi-storey building known as “International Tech Park, Chennai” situated at Taramani CSIR Road, Chennai,\nTamilnadu\n\nTHE THIRD SCHEDULE ABOVE REFERRED TO :\n\n(Floor Plan of Unit)\n\nIN WITNESS WHEREOF the parties hereto have set and subscribed their respective hands and\nseals on the day month and year first above written. [...] | 3.14 | All notices, communications, demands, requests, approvals or consents required to be given or made under this Agreement by either party must be in writing and shall be effective only if either personally delivered, sent by pre-paid mail or by facsimile to the addresses and to the attention persons indicated below:- To the Lessor Ascendas IT Park (Chennai) Limited, Unit No.7 & 8, I Floor, International Tech Park Chennai, Taramani Road, Taramani, Chennai - 600 113 To the Lessee [...] ASCENDAS IT PARK (CHENNAI)\nLIMITED, a company incorporated under the Companies Act, 1956 having its registered office at Unit No.7 & 8, I Floor, International Tech Park Chennai, Taramani Road, Taramani, Chennai - 600 113 hereinafter referred to a",
+  "tags": [
+   "no_listing",
+   "junk"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "lease deed for office space (SEC filing)",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g10",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.mapquest.com/in/punjab/tip-top-pg-paying-guest-809219096",
+  "title": "TIP TOP PG - Paying Guest",
+  "content": "Title: TIP TOP PG - Paying Guest\nYour printable directions will be ready after this ad experience... Log in or sign up. *   Image 3 My saved places. Learn more about our mobile apps. *   Image 4: Android app Google Play. *   Image 5: Download on the App Store. Image 6CoffeeImage 7FoodImage 8GasImage 9GroceryImage 10ShoppingImage 11Hotels. - [x] Traffic slowdowns - [x] Traffic incidents. TIP TOP PG - Paying Guest. Search places or paste a link. ## Photos. Tip Top Pg Lpu Law Gate Road Near Electric Tower Road Maheru Phagwara, Phagwara, 144411. Comfortable Accommodations TIP TOP PG in Phagwāra offers family rooms with air-conditioning, private bathrooms, and free WiFi. Each room includes a dining area, work desk, and TV. Convenient Facilities Guests benefit from a 24-hour front desk, room service, and free on-site private parking. Additional amenities include bathrobes, free toiletries, and a dining table. Delicious Breakfast A vegetarian breakfast is served daily, providing a healthy start to the day. Accessible Location Located 19 mi from Adampur Airport, the hotel is near Electric Tower Road and LPU Law Gate Road. Check-in: 12 PM, Check-out: 10 AM. Image 26: Lighthouse by MapQuest ",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g11",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://rocketreach.co/paying-guest-pg-competitors_b705ca9ac5008d92",
+  "title": "Paying Guest PG Competitors | Companies like Paying Guest PG",
+  "content": "Title: Paying Guest PG Competitors | Companies like Paying Guest PG\nView Paying Guest PG's top competitors like Amura, Bunk Stay Co-working Hostel & Glamping, and CoLive - Branded Serviced Homes. Sonder is revolutionizing hospitality through innovative, tech-powered service and inspiring, thoughtfully designed accommodations combined into one seamlessly managed experience. Officially launched in 2014 and headquartered in San Francisco, Sonder is making a world of better stays open to all with a variety of accommodation options — from rooms to suites and apartments — found in more than 30 cities spanning eight countries and three continents. Sonder’s innovative app empowers guests by making self-service features and 24/7 on-the-ground support just a tap away. From simple self check-in to boutique bathroom amenities, we bring the best of a hotel without any of the formality. Today, Nestaway operates on both the demand and supply sides of the rental market, i.e., we onboard homeowners with rental properties, find tenants for these homes, and subsequently manage these properties. We've created a young ecosystem, providing: -Higher rental incomes for home owners -Gorgeous, fully furnish",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g12",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.cnbc.com/2021/10/22/budgeting-for-food-and-rent-if-you-make-35000-per-year.html",
+  "title": "Budgeting for food and rent if you make $35,000 per year",
+  "content": "Paying your rent and buying food can drain your budget if you aren't careful.\n\nCutting back in either category will go a long way towards freeing up cash to reach your other goals.\n\nCNBC crunched the numbers, and we can give you an idea of what your food and housing expenses should look like if you make $35,000 per year.\n\nCheck out this video to get an idea of what your expenditures might be every month. [...] More from Invest in You:  \nWhat your FICO score means and why you should pay attention  \nJosh Brown: How I explain the stock market vs. the economy  \nHow insurance premiums and deductibles work\n\nCHECK OUT: I made $1,000 by taking pictures with this easy side hustle via Grow with Acorns+CNBC.\n\nDisclosure: NBCUniversal and Comcast Ventures are investors in Acorns.",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g13",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://au.finance.yahoo.com/news/popular-tactic-allowing-aussie-couple-to-save-8000-a-month-for-first-home-deposit-very-hard-to-save-012901460.html",
+  "title": "Popular tactic allowing Aussie couple to save $8,000 a month for first home deposit: ‘Very hard to save’",
+  "content": "They don't pay board to live at home, but do cover their own bills and groceries. This means the couple are able to save roughly half of their income, with Nassar working full-time in HR and Surace in construction.\n\nNassar said the reality was this wouldn't be possible if they weren't lucky enough to live at home rent-free.\n\nDo you have a story to share? Contact tamika.seeto@yahooinc.com\n\n\"Living at home allows us to do that,\" she said. [...] \"It's hard to save, especially in this economy. It's very hard to save, if you don't live at home and you're paying rent and you're paying bills and doing all that, plus just trying to do everyday life.\"\n\nA Curtin University survey of 1,725 parents found living rent-free in the family home had become the number one way parents helped their kids in the last five years. [...] The couple have noticed properties have been getting more competitive and more expensive, particularly since the government expanded its 5 per cent deposit scheme.\n\nLimits on applicant numbers have been scrapped, along with significant increases to property price caps. In Sydney, the price cap has gone from $900,000 to $1.5 million.\n\n\"You noticed it was a lot more competiti",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g14",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://tavily.com/knowledge/company/xXOEOTVuyEDV",
+  "title": "Медицинский центр",
+  "content": "# Медицинский центр\nID: xXOEOTVuyEDV\nWebsite: www.sso.passport.yandex.ru\nLegal name: PG S.R.L.\nHeadquarters: Lainate, Lombardia, Italy\nLinkedIn: www.linkedin.com/company/pg · 549 followers\nIndustry: Veterinary Services\nCompany type: Self-Employed\nFounded: 2010\nBusiness model: B2B\nSaaS: no\nSocial profiles: www.facebook.com/pgmaterassi, www.crunchbase.com/organization/pg\nEmail: info@pgmaterassi.it\nPhone: +39 02 96 32 80 65 [...] Description: Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! Мы всегда рады помочь Вам! [...] ## Technology\n- Detected: 2\n- youtube · last seen 2026-09-21\n- amp · last seen 2025-08-11\n\n## Reputation\n- Open roles: 0",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g15",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.nobroker.in/property/rent/chennai/Velachery%20-%20Taluk%20Office%2C%20Taramani%2C%20Chennai%2C%20Tamil%20Nadu%2C%20India?searchParam=W3sicGxhY2VOYW1lIjoiVmVsYWNoZXJ5IC0gVGFsdWsgT2ZmaWNlLCBUYXJhbWFuaSwgQ2hlbm5haSwgVGFtaWwgTmFkdSwgSW5kaWEiLCJwbGFjZUlkIjoiQ2hJSkUxNHpINGxuVWpvUnlZRllUTTdSWUswIiwibGF0IjoiMTIuOTgzIiwibG9uIjoiODAuMjQ0In1d&sharedAccomodation=0&pageNo=3",
+  "title": "Flats, Apartments for Rent in Tharamani, Chennai - NoBroker",
+  "content": "1 BHK House for Rent In Taramani. ₹ 15,000. + maintenance Included. Independent House, MGR Salai, near New Balaji Men's PG ,Taramani, Taramani, chennai. Nearby.",
+  "tags": [
+   "ad"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "1 BHK Independent House, MGR Salai, Taramani",
+     "kind": "flat",
+     "rent": 15000,
+     "area": "Taramani"
+    }
+   ],
+   "evidence": []
+  },
+  "note": "1 BHK independent house, maintenance included",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g16",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.magicbricks.com/house-on-rent-without-brokerage-in-tharamani-chennai-pppfr",
+  "title": "House for rent in Tharamani Chennai without brokerage - MagicBricks",
+  "content": "Find over 9 house for rent in Tharamani Chennai without brokerage. available at rent of ₹1.7 Lac . NegotiableSecurity deposit 10 month Rental",
+  "tags": [
+   "ad",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "House for rent in Tharamani (MagicBricks)",
+     "kind": "flat",
+     "rent": 170000,
+     "area": "Taramani",
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "house for rent, rent shown as 1.7 Lac, deposit 10 months",
+  "reviewed": "user"
+ },
+ {
+  "id": "g17",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.99acres.com/property-for-rent-in-tharamani-chennai-south-without-brokerage-ffid",
+  "title": "Property for Rent in Tharamani, OMR without brokerage - 99acres.com",
+  "content": "in Taramani, OMR ₹13,001 / month + Deposit ₹50,000 400 sqft(37 sqm) 1 Bedroom House for rent in Taramani, OMR ₹10,000 / month + Deposit ₹30,000 300 sqft(28 sqm",
+  "tags": [
+   "ad",
+   "multi_listing",
+   "price_range"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Property for rent in Taramani, OMR (13,001)",
+     "kind": "flat",
+     "rent": 13001,
+     "area": "Taramani",
+     "deposit": 50000,
+     "judgment": true
+    },
+    {
+     "name": "1 Bedroom House for rent in Taramani, OMR (10,000)",
+     "kind": "flat",
+     "rent": 10000,
+     "area": "Taramani",
+     "deposit": 30000
+    }
+   ],
+   "evidence": []
+  },
+  "note": "two flats on a listing page",
+  "reviewed": "user"
+ },
+ {
+  "id": "g18",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.cbinsights.com/company/nestoria",
+  "title": "Nestoria - Products, Competitors, Financials, Employees, Headquarters Locations",
+  "content": "Technology Vendors\n Recent Research\n Newsletter\n Media Support\n Login\n\nCB Insights\n\nNestoria company logo\n\n# Nestoria\n\nnestoria.com\n\n## Stage\n\nAcquired | Acquired\n\n## About Nestoria\n\nNestoria is a search engine for real estate, operating in nine countries. The company partners with major media brands to create the simplest way to search sales and rental listings.\n\n## Headquarters Location\n\nMadrid,\n\nSpain\n\nLoading...\n\nLoading...\n\n## Expert Collections containing Nestoria [...] 2,493 items\n\nStartups in the space cover the residential and commercial real estate space. Categories include buying, selling and investing in real estate (iBuyers, marketplaces, investment/crowdfunding platforms), and property management, insurance, mortgage, construction, and more.\n\n## LatestNestoria News\n\nSep 16, 2021\n\nMost Popular House and Home Apps in India 2021\n\nJun 21, 2017\n\nHSBC et Ogilvy Paris présentent “Idéal City”\n\nJan 9, 2012\n\nOpen Source Maps Gain Ground as Google Paywall Looms [...] Expert Collections are analyst-curated lists that highlight the companies you need to know in the most important technology spaces.\n\nNestoria is included in 1 Expert Collection, including Real Estate Tech.\n\nR\n\n# Rea",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g19",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://finance.yahoo.com/news/rent-runway-inc-rent-q3-121559216.html",
+  "title": "Rent the Runway Inc (RENT) Q3 2025: Everything You Need To Know Ahead Of Earnings",
+  "content": "Based on the consensus recommendation from one brokerage firm, Rent the Runway Inc's (NASDAQ:RENT) average brokerage recommendation is currently 3.0, indicating a \"Hold\" status. The rating scale ranges from 1 to 5, where 1 signifies Strong Buy, and 5 denotes Sell.\n\nRent the Runway Inc (RENT) Q3 2025: Everything You Need To Know Ahead Of Earnings\n\nRent the Runway Inc (RENT) Q3 2025: Everything You Need To Know Ahead Of Earnings\n\nTerms  and Privacy Policy\n\nPrivacy Dashboard\n\nMore Info [...] 1. CD Rates\n      2. Best High-Yield Savings\n      3. Best Money Market\n      4. Best Free Checking\n      5. Best Online Banks\n   4. Mortgage \n      1. Best Mortgage Lenders\n      2. Best Mortgage Rates\n      3. Mortgage Refinance\n      4. Mortgage Calculator\n      5. Mortgage Affordability Calculator\n   5. Student Loans \n      1. Federal vs. Private\n      2. FAFSA Guide\n      3. Student Loan Assistance\n      4. Student Loan Forgiveness\n      5. Paying Off Student Loans [...] In the previous quarter ending on January 31, 2025, Rent the Runway Inc's (NASDAQ:RENT) actual revenue was $76.40 million, which missed analysts' revenue expectations of $77.60 million by -1.55%. Rent the Runway Inc's (NASDAQ",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g20",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://finance.yahoo.com/news/expect-rent-runway-inc-rent-131926485.html",
+  "title": "What To Expect From Rent the Runway Inc (RENT) Q2 2025 Earnings",
+  "content": "Based on GuruFocus estimates, the estimated GF Value for Rent the Runway Inc (NASDAQ:RENT) in one year is $13.36, suggesting an upside of 115.48% from the current price of $6.20.\n\nBased on the consensus recommendation from 1 brokerage firm, Rent the Runway Inc's (NASDAQ:RENT) average brokerage recommendation is currently 3.0, indicating a \"Hold\" status. The rating scale ranges from 1 to 5, where 1 signifies Strong Buy, and 5 denotes Sell. [...] 1. CD Rates\n      2. Best High-Yield Savings\n      3. Best Money Market\n      4. Best Free Checking\n      5. Best Online Banks\n   4. Mortgage \n      1. Best Mortgage Lenders\n      2. Best Mortgage Rates\n      3. Mortgage Refinance\n      4. Mortgage Calculator\n      5. Mortgage Affordability Calculator\n   5. Student Loans \n      1. Federal vs. Private\n      2. FAFSA Guide\n      3. Student Loan Assistance\n      4. Student Loan Forgiveness\n      5. Paying Off Student Loans [...] ## Rent the Runway Inc (NASDAQ:RENT) Reported History\n\nIn the previous quarter ending January 31, 2025, Rent the Runway Inc's (NASDAQ:RENT) actual revenue was $0.08 billion, which missed analysts' revenue expectations of $0.08 billion by -1.55%. Rent the Runway Inc's (N",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g21",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://finance.yahoo.com/news/earnings-watch-rent-runway-inc-130640875.html",
+  "title": "Earnings To Watch: Rent the Runway Inc (RENT) Reports Q2 2024 Result",
+  "content": "Based on GuruFocus estimates, the estimated GF Value for Rent the Runway Inc (NASDAQ:RENT) in one year is $47.51, suggesting an upside of 291.67% from the current price of $12.13.\n\nBased on the consensus recommendation from 3 brokerage firms, Rent the Runway Inc's (NASDAQ:RENT) average brokerage recommendation is currently 2.0, indicating an \"Outperform\" status. The rating scale ranges from 1 to 5, where 1 signifies Strong Buy, and 5 denotes Sell. [...] 1. CD Rates\n      2. Best High-Yield Savings\n      3. Best Money Market\n      4. Best Free Checking\n      5. Best Online Banks\n   4. Mortgage \n      1. Best Mortgage Lenders\n      2. Best Mortgage Rates\n      3. Mortgage Refinance\n      4. Mortgage Calculator\n      5. Mortgage Affordability Calculator\n   5. Student Loans \n      1. Federal vs. Private\n      2. FAFSA Guide\n      3. Student Loan Assistance\n      4. Student Loan Forgiveness\n      5. Paying Off Student Loans [...] ## Rent the Runway Inc (NASDAQ:RENT) Reported History\n\nIn the previous quarter of April 30, 2024, Rent the Runway Inc's (NASDAQ:RENT) actual revenue was $75.00 million, which beat analysts' revenue expectations of $73.73 million by 1.72%. Rent the Runway Inc's ",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g22",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.stanzaliving.com/paying-guest-pg-hostel-near-taramani-taramani-mrts-station-road-new-colony-chennai-slnce3ae17c1",
+  "title": "18 PGs near Taramani, Chennai",
+  "content": "Stanza Living is one of the best PG options near Taramani, Chennai, offering fully furnished rooms, AC, Wi-Fi, homely meals and app-based support. With tech-",
+  "tags": [
+   "no_listing",
+   "junk",
+   "truncated"
+  ],
+  "expected": {
+   "source_type": "builder",
+   "listings": [],
+   "evidence": []
+  },
+  "note": "text cut off before any price",
+  "reviewed": "user"
+ },
+ {
+  "id": "g23",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.quora.com/Which-is-better-in-Chennai-Taramani-area-Paying-guest-or-sharing-home",
+  "title": "Which is better in Chennai (Taramani area)? Paying guest ...",
+  "content": "Which is better in Chennai (Taramani area)? Paying guest or sharing home?",
+  "tags": [
+   "no_listing",
+   "forum"
+  ],
+  "expected": {
+   "source_type": "forum",
+   "listings": [],
+   "evidence": []
+  },
+  "note": "question title only",
+  "reviewed": "user"
+ },
+ {
+  "id": "g24",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://tracxn.com/d/companies/pg-and-hostel/__2Jiya9Ub8Z7wfm-ZKZGo8xPsAI7aOXhiHXIug9Lvrg4",
+  "title": "PG and Hostel - 2026 Company Profile & Competitors - Tracxn",
+  "content": "Residential Real Estate Tech - Sector Report\n\n## FAQs about PG and Hostel\n\nAccel Partners\nPartech\nIN-Q-TEL - US\nFujitsu\nTenity\nStanford [...] Logo for Spotahome\nLogo for HousingAnywhere\nLogo for June Homes\nLogo for Qasa\nLogo for PGO_1582547088950.png?devicePixelRatio=2&height=30&width=30)\nLogo for Homes and Rentals\nLogo for Homie_1582548235490.png?devicePixelRatio=2&height=30&width=30)\nLogo for Aptuno\nLogo for Wunderflats\nLogo for Manda\nLogo for PG and Hostel\nlock\n\n## PG and Hostel's Investments and acquisitions\n\n## Reports related to PG and Hostel\n\nAn image depicting Residential Real Estate Tech - Sector Report [...] PG and Hostel has not raised any funding rounds yet.\n\nchrome_extension_cta_illustration\n\n## PG and Hostel's Competitors and alternates",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "claude"
+ },
+ {
+  "id": "g25",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.yelp.com/biz/hi-new-york-city-hostel-new-york",
+  "title": "HI NEW YORK CITY HOSTEL - Updated November 2026 - 158 Reviews - 212 Photos - 891 Amsterdam Ave, New York, New York - Hostels - Phone Number - Yelp",
+  "content": "ASL proficient\n\nAccepts credit cards\n\nAccepts Apple Pay\n\nFree Wi-Fi\n\n## About the Business\n\nBusiness owner information\n\nPhoto of Community Engagement M.\n\nCommunity Engagement M.\n\nManager [...] Write a review\n\nAdd photos/videos\n\nDo you recommend this business?\n\n## Review Highlights\n\nDrea V.\n\n“It's super close the subway, there are HUGE lockers for every bunk, and there is a charming little outdoor patio.” in 29 reviews\n\nhi-new-york-city-hostel-new-york photo wMwjaqJnZcE5BiIcdry4Lw\n\n“A hostel is a cheap place to stay where you sleep in a group room (6-12 people) on bunk beds.” in 12 reviews\n\nAndrea H. [...] Andrea H.\n\n“Friendly staff, clean rooms, linens, laundry, kitchen, and a New York deli that is open until 1am!” in 9 reviews\n\n## Location & Hours\n\nSuggest an edit\n\nMap\n\n891 Amsterdam Ave\n\nNew York, NY 10025\n\nManhattan Valley\n\nGet directions\n\n|  |  |\n --- |\n|  |  Open 24 hours |\n| Tue |  Open 24 hours |\n| Wed |  Open 24 hours |\n| Thu |  Open 24 hours |\n| Fri |  Open 24 hours | Open now |\n| Sat |  Open 24 hours |\n| Sun |  Open 24 hours |\n\n## Amenities and More\n\nASL proficient",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "user"
+ },
+ {
+  "id": "g26",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.yelp.com/biz/green-tortoise-hostel-seattle",
+  "title": "GREEN TORTOISE HOSTEL - Updated November 2026 - 275 Reviews - 167 Photos - 105 1/2 Pike St, Seattle, Washington - Hostels - Phone Number - Yelp",
+  "content": "Title: GREEN TORTOISE HOSTEL - Updated November 2026 - 275 Reviews - 167 Photos - 105 1/2 Pike St, Seattle, Washington - Hostels - Phone Number - Yelp\n# Green Tortoise Hostel. Green Tortoise Hostel - Seattle, WA. Green Tortoise Hostel - Outside - Seattle, WA. Green Tortoise Hostel - Rooms - Seattle, WA. green-tortoise-hostel-seattle photo eFuJLmOUi9xU6Fs4sc-X_w. “It's in a perfect location and right across the street from Pike Markets and 5 mins away from Seattle Aquarium.” in 58 reviews. Exterior outside entrance of Green Tortoise Hostel - The Entrance - Seattle, Washington. The World Famous Green Tortoise Adventure Travel began over 40 years ago, with one sturdy bus and the realization that beautiful places, great food, and sociable people were the only essentials for gratifying travel experiences. The Green Tortoise hostels in San Francisco and Seattle are built on this fine tradition. The Green Tortoise San Francisco and Seattle hostels are created around a social communal experience. We have expanded and refined the hostel experience with free internet, free meals, private bathrooms, and comforts that make the Green Tortoise unique.…. If you book the Queen bed dorm room is it ",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "user"
+ },
+ {
+  "id": "g27",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.yelp.com/biz/native-hostel-austin-2",
+  "title": "Native Hostel - Austin, TX",
+  "content": "NATIVE HOSTEL - CLOSED - Updated February 2026 - 223 Photos & 127 Reviews - 807 E 4th St, Austin, Texas - Hostels - Restaurant Reviews - Phone Number - Yelp. warehouse in downtown Austin, Native is an experiential hostel offering a kinetic collision of music,. - Austin, TX : Native Hostel - $6 Modelos - Austin, TX. Staffs were nice and friendly as well : Native Hostel - Austin, TX Helpful 0 Helpful 1 Thanks 0 Thanks 1 Love this 1 Love this 2 Oh no 0 Oh no 1 What do you think? I booked my stay at Native Hostel for its proximity to Downtown Austin and the lovely pictures on yelp and Hostelworld. - Austin, TX : Native Hostel - Learned to two-step at our offsite! - Austin, TX : Native Hostel - Austin, TX Helpful 6 Helpful 7 Thanks 0 Thanks 1 Love this 7 Love this 8 Oh no 0 Oh no 1 What do you think? : Native Hostel - Sinage - Austin, TX : Native Hostel - Cool bar - Austin, TX : Native Hostel - Brisket tacos. * Affordable Cheap Venues & Event Spaces in Austin, Texas. * Best Donuts to Try in Austin, Texas Near You. * Book Dog Friendly Hotels in Austin, Texas. * Discover Affordable Youth Hostels in Austin, Texas, {State}. * 24 Hour Breakfast Restaurants near Native Hostel. * Affordable We",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "user"
+ },
+ {
+  "id": "g28",
+  "origin": "live-capture",
+  "city": "Chennai",
+  "url": "https://www.yelp.com/biz/waikiki-beachside-hostel-honolulu",
+  "title": "WAIKIKI BEACHSIDE HOSTEL - Updated April 2026 - 137 Photos & 97 Reviews - 2556 Lemon Rd, Honolulu, Hawaii - Hostels - Phone Number - Yelp",
+  "content": "Title: WAIKIKI BEACHSIDE HOSTEL - Updated April 2026 - 137 Photos & 97 Reviews - 2556 Lemon Rd, Honolulu, Hawaii - Hostels - Phone Number - Yelp\nWaikiki Beachside Hostel - Your desk - Honolulu, HI. Waikiki Beachside Hostel - britta sleeping in her bed - Honolulu, HI. Waikiki Beachside Hostel - Downstairs area - Honolulu, HI. Waikiki Beachside Hostel - Coffee Station - Honolulu, HI. Waikiki Beachside Hostel - Honolulu, HI. Waikiki Beachside Hostel - Waikiki Beachside Hostel Building - Honolulu, HI. Overall thoughts: GREAT HOSTEL if you're looking to come to Hawaii and stay in the Waikiki area. * **Youth Hostels in Honolulu, Hawaii**. * **Hotels With Free Parking in Honolulu, Hawaii**. * **Rooming Houses in Honolulu, Hawaii**. * **Private Beach in Honolulu, Hawaii**. * **Extended Stay Hotels in Honolulu, Hawaii**. * BEST of Honolulu, HI Coffee near Waikiki Beachside Hostel. * BEST of Honolulu, HI Restaurants near Waikiki Beachside Hostel. * BEST of Honolulu, HI Things to Do near Waikiki Beachside Hostel. * BEST of Honolulu, HI Public Shower near Waikiki Beachside Hostel. * BEST of Honolulu, HI Motel near Waikiki Beachside Hostel. * BEST of Honolulu, HI Rooftop Restaurant near Waikiki",
+  "tags": [
+   "no_listing",
+   "junk",
+   "off_topic"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "not a rental listing",
+  "reviewed": "user"
+ },
+ {
+  "id": "s01",
+  "origin": "synthetic",
+  "city": "Pune",
+  "url": "https://listings.example/pune/om-sai-pg-kothrud",
+  "title": "Om Sai PG, Kothrud, Pune",
+  "content": "Om Sai PG, Kothrud, Pune. Single room Rs 11,500 per month, double sharing Rs 7,800 per bed, triple sharing Rs 6,200 per bed. Security deposit Rs 10,000 (refundable). Two meals a day included. Wi-Fi and housekeeping included. Call 98220 45678.",
+  "tags": [
+   "ad",
+   "multi_listing",
+   "two_city"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Om Sai PG, single room",
+     "kind": "pg",
+     "rent": 11500,
+     "deposit": 10000,
+     "area": "Kothrud",
+     "sharing": "single",
+     "private_room": true,
+     "meals_included": true,
+     "phone": "98220 45678",
+     "judgment": false
+    },
+    {
+     "name": "Om Sai PG, double sharing",
+     "kind": "pg",
+     "rent": 7800,
+     "deposit": 10000,
+     "area": "Kothrud",
+     "sharing": "double",
+     "private_room": false,
+     "meals_included": true,
+     "phone": "98220 45678",
+     "judgment": false
+    },
+    {
+     "name": "Om Sai PG, triple sharing",
+     "kind": "pg",
+     "rent": 6200,
+     "deposit": 10000,
+     "area": "Kothrud",
+     "sharing": "triple",
+     "private_room": false,
+     "meals_included": true,
+     "phone": "98220 45678",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "One property, three room types with exact prices; second city.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s02",
+  "origin": "synthetic",
+  "city": "Pune",
+  "url": "https://listings.example/pune/2bhk-baner",
+  "title": "2 BHK Flat for Rent in Baner, Pune",
+  "content": "2 BHK semi-furnished flat for rent in Baner, Pune. Rent Rs 32,000 per month plus maintenance Rs 2,500. Security deposit Rs 96,000. Brokerage Rs 16,000. 11 month lock-in. Available from 1 December.",
+  "tags": [
+   "ad",
+   "two_city",
+   "flat_full_terms"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "2 BHK flat in Baner",
+     "kind": "flat",
+     "rent": 32000,
+     "maintenance": 2500,
+     "deposit": 96000,
+     "brokerage": 16000,
+     "lock_in_months": 11,
+     "furnishing": "semi",
+     "bhk": 2,
+     "area": "Baner",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Flat with every cost field stated.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s03",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://listings.example/chennai/1bhk-velachery",
+  "title": "1 BHK Flat for Rent in Velachery, Chennai",
+  "content": "1 BHK unfurnished flat for rent in Velachery, Chennai. Rent Rs 14,500 per month. Ready to move. Family or bachelors, no pets.",
+  "tags": [
+   "ad",
+   "flat_no_deposit"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "1 BHK flat in Velachery",
+     "kind": "flat",
+     "rent": 14500,
+     "furnishing": "unfurnished",
+     "bhk": 1,
+     "area": "Velachery",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "No deposit stated: must stay null (the app estimates it later).",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s04",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://listings.example/chennai/palm-residency-a",
+  "title": "Palm Residency PG for Gents, Taramani",
+  "content": "Palm Residency PG, Taramani, Chennai. Double sharing Rs 9,500 per month, deposit Rs 19,000. Wi-Fi and laundry included. Call 98400 11223.",
+  "tags": [
+   "ad",
+   "duplicate_pair"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Palm Residency PG, double sharing",
+     "kind": "pg",
+     "rent": 9500,
+     "deposit": 19000,
+     "area": "Taramani",
+     "sharing": "double",
+     "private_room": false,
+     "gender_restricted": true,
+     "phone": "98400 11223",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Same property as s05 on another portal (phone, name and rent within 5%): dedup must merge them.",
+  "reviewed": "claude",
+  "dup_group": "palm-residency"
+ },
+ {
+  "id": "s05",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://listings.example/chennai/palm-residency-b",
+  "title": "Palm Residency Gents PG Taramani - double sharing",
+  "content": "Palm Residency Gents PG Taramani - double sharing Rs 9,800 / month. Contact 9840011223. Near Tidel Park.",
+  "tags": [
+   "ad",
+   "duplicate_pair"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Palm Residency Gents PG, double sharing",
+     "kind": "pg",
+     "rent": 9800,
+     "area": "Taramani",
+     "sharing": "double",
+     "private_room": false,
+     "gender_restricted": true,
+     "phone": "9840011223",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Same property as s04: rent differs by 3%, phone written without a space.",
+  "reviewed": "claude",
+  "dup_group": "palm-residency"
+ },
+ {
+  "id": "s06",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://mapleliving.example/velachery",
+  "title": "Maple Living - Velachery house",
+  "content": "Maple Living, Velachery. Single AC rooms from Rs 13,900 per month and double rooms from Rs 9,900. Two meals a day included. Refundable deposit Rs 15,000. Minimum stay 3 months, 30 days notice.",
+  "tags": [
+   "builder",
+   "price_range",
+   "multi_listing"
+  ],
+  "expected": {
+   "source_type": "builder",
+   "listings": [
+    {
+     "name": "Maple Living Velachery, single AC room",
+     "kind": "pg",
+     "rent": 13900,
+     "deposit": 15000,
+     "area": "Velachery",
+     "sharing": "single",
+     "private_room": true,
+     "meals_included": true,
+     "lock_in_months": 3,
+     "notice_months": 1,
+     "judgment": true
+    },
+    {
+     "name": "Maple Living Velachery, double room",
+     "kind": "pg",
+     "rent": 9900,
+     "deposit": 15000,
+     "area": "Velachery",
+     "sharing": "double",
+     "private_room": false,
+     "meals_included": true,
+     "lock_in_months": 3,
+     "notice_months": 1,
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Operator's own site, 'from' prices, lock-in and notice stated.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s07",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://reviews.example/palm-residency-taramani",
+  "title": "Palm Residency PG, Taramani - resident reviews",
+  "content": "Palm Residency PG, Taramani: resident reviews. 3.5 out of 5. The rooms are spacious and well maintained, which is why I stayed. The caretakers are rude though and shout at residents whenever friends visit. Mixed feelings.",
+  "tags": [
+   "review",
+   "evidence",
+   "no_listing",
+   "good_property_bad_caretakers"
+  ],
+  "expected": {
+   "source_type": "review",
+   "listings": [],
+   "evidence": [
+    {
+     "subject": "Palm Residency PG",
+     "aspect": "property_condition",
+     "polarity": "positive",
+     "severity": "medium"
+    },
+    {
+     "subject": "Palm Residency PG",
+     "aspect": "management",
+     "polarity": "negative",
+     "severity": "medium"
+    }
+   ]
+  },
+  "note": "One review, two opinions: must be two evidence items. No rupee amount, so the prefilter skips it (known limit).",
+  "reviewed": "user"
+ },
+ {
+  "id": "s08",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://reviews.example/jasmine-grove-velachery",
+  "title": "Jasmine Grove Women's PG, Velachery - reviews",
+  "content": "Jasmine Grove Women's PG, Velachery. Reviews: 'Very safe, there is CCTV and a warden who actually cares. The food is tasty and there is plenty of it.' 4.6 out of 5 from 38 reviews.",
+  "tags": [
+   "review",
+   "evidence",
+   "no_listing",
+   "positive_only"
+  ],
+  "expected": {
+   "source_type": "review",
+   "listings": [],
+   "evidence": [
+    {
+     "subject": "Jasmine Grove Women's PG",
+     "aspect": "safety",
+     "polarity": "positive",
+     "severity": "medium"
+    },
+    {
+     "subject": "Jasmine Grove Women's PG",
+     "aspect": "food",
+     "polarity": "positive",
+     "severity": "medium"
+    }
+   ]
+  },
+  "note": "Positive-only review page.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s09",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://forum.example/r/chennai/lotus-court-warning",
+  "title": "Warning about Lotus Court PG in Perungudi",
+  "content": "Warning about Lotus Court PG in Perungudi. They deducted Rs 8,000 from my Rs 15,000 deposit for repainting and took 45 days to return the rest. Two others in the thread say the same thing happened to them.",
+  "tags": [
+   "forum",
+   "evidence",
+   "no_listing",
+   "rupee_amount_not_a_rent"
+  ],
+  "expected": {
+   "source_type": "forum",
+   "listings": [],
+   "evidence": [
+    {
+     "subject": "Lotus Court PG",
+     "aspect": "deposit_refund",
+     "polarity": "negative",
+     "severity": "high"
+    }
+   ]
+  },
+  "note": "Contains rupee amounts that are not a rent: must not become a listing. Aspect choice (deposit_refund vs hidden_charges) is a judgment.",
+  "reviewed": "user"
+ },
+ {
+  "id": "s10",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://forum.example/r/chennai/pg-near-omr",
+  "title": "Looking for a PG near OMR",
+  "content": "Looking for a PG near OMR, Chennai. Budget around 10k a month, vegetarian, female. Any suggestions? Thanks!",
+  "tags": [
+   "forum",
+   "no_listing",
+   "budget_not_a_rent"
+  ],
+  "expected": {
+   "source_type": "forum",
+   "listings": [],
+   "evidence": []
+  },
+  "note": "A budget, not a rent: no listing and no evidence.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s11",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://blog.example/pg-tips",
+  "title": "10 tips for finding a PG in a new city",
+  "content": "Moving to a new city? Visit the PG in person, ask about the notice period, check the water supply and the food, talk to current residents and read the agreement before you pay anything. Never transfer money to a stranger before you have seen the room.",
+  "tags": [
+   "junk",
+   "no_listing"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "Advice article, no amount.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s12",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://news.example/chennai-rent-report",
+  "title": "Rents in Chennai rise 8 percent",
+  "content": "Rents in Chennai rose 8 percent this year. The average rent for a 2 BHK is now Rs 24,000 a month, according to a property-market report, with OMR and Velachery seeing the sharpest rise.",
+  "tags": [
+   "junk",
+   "no_listing",
+   "rupee_amount_not_a_rent"
+  ],
+  "expected": {
+   "source_type": null,
+   "listings": [],
+   "evidence": []
+  },
+  "note": "Market statistic with a rupee amount but no specific listing.",
+  "reviewed": "claude"
+ },
+ {
+  "id": "s13",
+  "origin": "synthetic",
+  "city": "Pune",
+  "url": "https://listings.example/pune/kothrud-pg-contradiction",
+  "title": "PG in Kothrud, Pune",
+  "content": "Kothrud PG, Pune. Double sharing Rs 7,000 per month. Updated: double sharing now Rs 12,000 per month. Contact the owner.",
+  "tags": [
+   "ad",
+   "contradiction",
+   "two_city"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Kothrud PG, double sharing",
+     "kind": "pg",
+     "rent": 12000,
+     "alt_rents": [
+      7000
+     ],
+     "area": "Kothrud",
+     "sharing": "double",
+     "private_room": false,
+     "extraction_confidence": "low",
+     "judgment": true
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Two prices on one page. The later 'updated' price is the key; the old one is also accepted. Expected extraction confidence is low.",
+  "reviewed": "user"
+ },
+ {
+  "id": "s14",
+  "origin": "synthetic",
+  "city": "Chennai",
+  "url": "https://listings.example/chennai/lakshmi-ladies-pg",
+  "title": "Lakshmi Ladies PG, Kodambakkam",
+  "content": "Lakshmi Ladies PG, Kodambakkam, Chennai. For working women only. Double sharing Rs 8,500 per month including breakfast and dinner. Quiet building, entry by 9 pm. Deposit Rs 8,500.",
+  "tags": [
+   "ad",
+   "lifestyle_fields"
+  ],
+  "expected": {
+   "source_type": "ad",
+   "listings": [
+    {
+     "name": "Lakshmi Ladies PG, double sharing",
+     "kind": "pg",
+     "rent": 8500,
+     "deposit": 8500,
+     "area": "Kodambakkam",
+     "sharing": "double",
+     "private_room": false,
+     "meals_included": true,
+     "gender_restricted": true,
+     "vibe": "quiet",
+     "judgment": false
+    }
+   ],
+   "evidence": []
+  },
+  "note": "Gender restriction, quiet vibe and meals all stated.",
+  "reviewed": "claude"
+ }
+]

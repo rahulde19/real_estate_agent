@@ -1,0 +1,99 @@
+{
+ "pages": 42,
+ "schema_valid_rate": 0.8571428571428571,
+ "listings_in_key": 28,
+ "listings_returned": 24,
+ "listings_found": 24,
+ "recall": 0.8571428571428571,
+ "precision": 1.0,
+ "false_positive_listings": 0,
+ "invented_rent_rate": 0.0,
+ "field_accuracy": {
+  "area": {
+   "correct": 14,
+   "scored": 21,
+   "rate": 0.6666666666666666
+  },
+  "bhk": {
+   "correct": 1,
+   "scored": 1,
+   "rate": 1.0
+  },
+  "deposit": {
+   "correct": 14,
+   "scored": 14,
+   "rate": 1.0
+  },
+  "furnishing": {
+   "correct": 5,
+   "scored": 5,
+   "rate": 1.0
+  },
+  "gender_restricted": {
+   "correct": 3,
+   "scored": 5,
+   "rate": 0.6
+  },
+  "lock_in_months": {
+   "correct": 2,
+   "scored": 2,
+   "rate": 1.0
+  },
+  "meals_included": {
+   "correct": 7,
+   "scored": 8,
+   "rate": 0.875
+  },
+  "notice_months": {
+   "correct": 0,
+   "scored": 2,
+   "rate": 0.0
+  },
+  "private_room": {
+   "correct": 10,
+   "scored": 13,
+   "rate": 0.7692307692307693
+  },
+  "sharing": {
+   "correct": 5,
+   "scored": 6,
+   "rate": 0.8333333333333334
+  },
+  "vibe": {
+   "correct": 1,
+   "scored": 1,
+   "rate": 1.0
+  }
+ },
+ "source_type_accuracy": 0.8846153846153846,
+ "evidence": {
+  "tp": 5,
+  "fp": 2,
+  "fn": 0,
+  "precision": 0.7142857142857143,
+  "recall": 1.0,
+  "severity_agreement": 0.6
+ },
+ "confidence_agreement": 1.0,
+ "pages_with_misses": [
+  "g06",
+  "g25",
+  "g26",
+  "g27",
+  "g28",
+  "s01",
+  "s02",
+  "s07",
+  "s08",
+  "s11",
+  "s12"
+ ],
+ "mode": "batch",
+ "model": "gemini-3.5-flash-lite",
+ "batch_size": 6,
+ "prompt_version": "f408fc09ed",
+ "date": "2026-11-21",
+ "calls": 7,
+ "tokens_in": 22174,
+ "tokens_out": 4744
+}

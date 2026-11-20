@@ -1,0 +1,137 @@
+[weights]            # must sum to 100
+affordability = 30
+commute       = 20
+liquidity     = 15
+lifestyle     = 15
+reputation    = 10
+flexibility   = 10
+
+[money]
+opp_rate               = 0.0075   # 9% annual, monthly
+delta_deposit_deduction = 0.1     # expected 10% of the deposit lost to deductions (assumption, tune with real data)
+housing_linked_share   = 0.5      # share of a city's non-rent cost that follows the housing choice (food, utilities, wifi)
+food_share_of_linked   = 0.7      # of that share, the part that is food; the rest is utilities + wifi
+
+[liquidity]
+tight_cash_multiple = 3
+tight_cash_mult     = 1.5
+healthy_buffer      = 0.5
+
+# Shapes of the sub-score formulas (0-10 scale). Edit to tune strictness.
+[scoring]
+afford_full_ratio    = 0.6    # monthly cost / budget at or below this -> affordability 10
+afford_zero_ratio    = 1.0    # at or above this -> affordability 0
+commute_full_frac    = 0.25   # commute <= this fraction of tolerance -> commute 10 (tolerance -> 0)
+commute_unknown      = 5.0    # commute score when minutes are unknown
+notice_zero_months   = 3      # notice period at or above this -> notice part of flexibility 0
+flex_lock_weight     = 0.6    # flexibility = this * lock-in part + (1 - this) * notice part
+reputation_base      = 5.0    # reputation score with no evidence
+reputation_divisor   = 2.0    # each distinct-source value moves the score by value / divisor
+
+# Preference match values; unknown is neutral so missing data neither rejects nor rewards.
+[lifestyle]
+match   = 1.0
+clash   = 0.0
+unknown = 0.5
+
+# City cost dataset (data/livingcost_india_all_inr.csv) quality rule.
+[city_costs]
+max_rent_share = 0.75   # a row whose rent is above this share of total cost is unusable (falls back to [defaults])
+
+# Search result size (Phase 6.4). Defaults are today's behaviour.
+[search]
+max_results = 8      # results per Tavily query (live mode)
+max_chars   = 1200   # text kept per result
+
+# Extraction cost controls (Phase 6). Chosen defaults: filter on, 5 pages per call (set prefilter=false, batch_size=1 for the old behaviour).
+[extraction]
+prefilter       = true    # skip pages that cannot contain a listing (no LLM call, text still saved)
+min_chars       = 80      # prefilter: shorter pages are skipped
+blocked_domains = ["youtube.com", "facebook.com", "instagram.com", "twitter.com", "x.com", "linkedin.com", "pinterest.com", "sec.gov"]
+batch_size      = 5       # pages per LLM call; 1 = one call per page
+batch_max_chars = 6000    # also cap the text of one batch
+evidence_domains = []     # review / forum sites kept by the prefilter even with no rupee amount (they can hold evidence). Empty = Phase 6 behaviour
+
+# Confidence tag (Phase 7.1). Weak points = missing key fields + the points below; shown to the user, never scored.
+[confidence]
+high_max_weak   = 3       # at most this many weak points -> "high"
+medium_max_weak = 6       # at most this many -> "medium"; more -> "low"
+
+[confidence.extraction_weak]   # weak points for the extractor's own confidence in a listing
+high    = 0
+medium  = 1
+low     = 3
+unknown = 1
+
+# Deduplication (Phase 7.2): same locality and type, rent within the tolerance, and phone / building name / geo-point agrees.
+[dedup]
+rent_tolerance = 0.05     # rents within 5% of the larger one count as the same
+geo_radius_m   = 100      # geo-points this close count as the same place
+
+# Staleness (Phase 7.3). Age = days since the earliest sighting of the property. Penalty is subtracted from the 0-10 final score.
+# Bands follow the design spec (15 / 30 / 45 days); penalties are a tenth of the spec's 3 / 5 / 7 (decision #45).
+[staleness]
+bands = [
+    { min_days = 15, penalty = 0.3 },
+    { min_days = 30, penalty = 0.5 },
+    { min_days = 45, penalty = 0.7, reverify = true },
+]
+
+# Source values (design spec 7.4). ad / builder are source reliability only (which source wins when duplicates
+# are merged); review_positive / complaint are what one independent source adds to Reputation.
+[source_values]
+ad              = 7
+builder         = 5
+review_positive = 7
+complaint       = -7
+
+# Evidence items (Phase 7.5).
+[evidence]
+independent_sources = ["forum", "review"]   # only these page types move Reputation
+
+[evidence.severity]        # multiplies the source value
+low    = 0.5
+medium = 0.75
+high   = 1.0
+
+[evidence.aspect_criteria] # which criterion an evidence item is shown under (v1: only Reputation's score moves)
+property_condition = "reputation"
+management         = "reputation"
+cleanliness        = "reputation"
+safety             = "reputation"
+food               = "lifestyle"
+noise              = "lifestyle"
+rules              = "lifestyle"
+location           = "commute"
+hidden_charges     = "affordability"
+deposit_refund     = "liquidity"
+lock_in_notice     = "flexibility"
+
+[decision]
+top_n = 7
+kind_window = 3                 # PG vs flat compares the mean score of each kind's top N survivors
+family_excludes_pg = true       # a family moves into a whole flat: PGs are rejected ("unsuitable") and never shown as closest misses
+
+# Assumptions used when a scraped listing does not state a value.
+# Reviewed (Phase 2.3): flat_brokerage_months and flat_setup are kept as generic baseline
+# assumptions, not market data for any city.
+[defaults]
+pg_deposit_months     = 2       # used only when too few listings of this type state a deposit (see deposit_median_min)
+flat_deposit_months   = 6
+deposit_median_min    = 3       # a missing deposit uses the median months-of-rent of this run's listings when at least this many state one
+flat_brokerage_months = 1
+flat_extras           = 2500    # Rs/month, whole flat (power, wifi, water). Fallback when the city has no usable cost data
+meal_cost             = 4500    # Rs/month per person if meals are needed but not included. Fallback when the city has no usable cost data
+pg_lock_in            = 1
+flat_lock_in          = 6
+pg_notice             = 1
+flat_notice           = 2
+
+[defaults.flat_setup]           # Rs, whole flat, by furnishing state of the flat
+furnished   = 0
+semi        = 15000
+unfurnished = 40000
+
+# Per-city overrides of [defaults]. Reserved: not read by code yet.
+# Example: [city_overrides.pune] with flat_deposit_months = 3
+[city_overrides]

@@ -1,0 +1,22 @@
+[
+ {"id": "solo_tight_cash", "description": "Solo, small monthly budget and little cash: deposits decide the ranking.",
+  "profile": {"city": "Chennai", "work_location": "Taramani", "budget": 12000, "upfront_cash": 40000, "horizon_months": 12,
+              "mover": "solo", "group_size": 1, "commute_tolerance": 40, "move_in_date": "2026-12-01", "food": "need meals",
+              "privacy": "sharing is fine", "furnishing": "unfurnished", "noise": "no preference", "gender_restricted": false, "must_have": {}}},
+ {"id": "solo_comfortable", "description": "Solo, healthy budget and cash, wants a private furnished room and quiet.",
+  "profile": {"city": "Chennai", "work_location": "Taramani", "budget": 25000, "upfront_cash": 150000, "horizon_months": 12,
+              "mover": "solo", "group_size": 1, "commute_tolerance": 40, "move_in_date": "2026-12-01", "food": "need meals",
+              "privacy": "private room", "furnishing": "furnished", "noise": "quiet", "gender_restricted": false, "must_have": {"privacy": true}}},
+ {"id": "three_friends_sharing", "description": "Three friends sharing a flat: flat costs are split three ways.",
+  "profile": {"city": "Chennai", "work_location": "Taramani", "budget": 15000, "upfront_cash": 120000, "horizon_months": 12,
+              "mover": "friends", "group_size": 3, "commute_tolerance": 40, "move_in_date": "2026-12-01", "food": "eat out",
+              "privacy": "sharing is fine", "furnishing": "unfurnished", "noise": "no preference", "gender_restricted": false, "must_have": {}}},
+ {"id": "family_of_four", "description": "Family of four: needs a whole flat, so PGs are not comparable.",
+  "profile": {"city": "Chennai", "work_location": "Taramani", "budget": 45000, "upfront_cash": 400000, "horizon_months": 12,
+              "mover": "family", "group_size": 4, "commute_tolerance": 40, "move_in_date": "2026-12-01", "food": "cook myself",
+              "privacy": "sharing is fine", "furnishing": "unfurnished", "noise": "no preference", "gender_restricted": false, "must_have": {}}},
+ {"id": "short_stay_second_city", "description": "Six-month stay in Pune (second city): lock-in and notice matter, private room is a must-have.",
+  "profile": {"city": "Pune", "work_location": "Baner", "budget": 18000, "upfront_cash": 60000, "horizon_months": 6,
+              "mover": "solo", "group_size": 1, "commute_tolerance": 40, "move_in_date": "2026-12-01", "food": "need meals",
+              "privacy": "private room", "furnishing": "furnished", "noise": "no preference", "gender_restricted": false, "must_have": {"privacy": true}}}
+]

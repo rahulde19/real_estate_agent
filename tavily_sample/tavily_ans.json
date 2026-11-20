@@ -1,0 +1,52 @@
+{
+  "query": "PG accommodation and 2 BHK flat rent in Chennai per month",
+  "follow_up_questions": null,
+  "answer": null,
+  "images": [],
+  "results": [
+    {
+      "title": "pg in chennai",
+      "url": "https://zolostays.com/pg-in-chennai",
+      "content": "Zolostays lists 74 PG properties in Chennai with rents from about Rs 4,720 to Rs 33,540 per month. Private rooms range from roughly Rs 10,455 to Rs 33,540, two-sharing from Rs 5,994 to Rs 16,922, and three-sharing from Rs 5,265 to Rs 14,362. Rent includes WiFi and housekeeping, electricity is billed on actuals, and the security deposit is one month's rent.",
+      "score": 0.91,
+      "raw_content": null
+    },
+    {
+      "title": "pgs in velachery chennai",
+      "url": "https://zolostays.com/pgs-in-velachery-chennai",
+      "content": "PG prices in Velachery span from under Rs 9,000 for shared rooms to about Rs 19,178 for a private room. Three-sharing is listed at Rs 9,460 to Rs 11,571, four-sharing at Rs 8,858 and two-sharing at Rs 11,610. Food is not included, and the deposit is one month's rent, refundable within 15 to 21 working days after move-out.",
+      "score": 0.84,
+      "raw_content": null
+    },
+    {
+      "title": "chennai perungudi PG listings",
+      "url": "https://houssed.com/rent/pg/listing/chennai-perungudi",
+      "content": "Furnished PG listings in Perungudi, Chennai include boys-only and co-ed options. Advertised rents range from about Rs 14,850 for a co-ed PG to Rs 30,100 for a boys-only PG. Figures are indicative averages from verified listings.",
+      "score": 0.78,
+      "raw_content": null
+    },
+    {
+      "title": "2 BHK Flat for Rent in Kodambakkam, Chennai",
+      "url": "https://housing.com/rent/18641576-1000-sqft-2-bhk-apartment-on-rent-in-kodambakkam-chennai",
+      "content": "An unfurnished 1000 sq.ft 2 BHK in Kodambakkam is listed at Rs 20,000 per month, with lift and power backup, and is available from January 2026. Listing was last updated October 2025.",
+      "score": 0.73,
+      "raw_content": null
+    },
+    {
+      "title": "2 BHK Flat for Rent in Chetpet, Chennai",
+      "url": "https://housing.com/rent/19621284-1100-sqft-2-bhk-apartment-on-rent-in-chetpet-chennai",
+      "content": "A fully furnished 1100 sq.ft 2 BHK in Chetpet is listed at Rs 40,000 per month with a security deposit of Rs 2,00,000. Price is marked as not negotiable. Listing was last updated March 2026.",
+      "score": 0.68,
+      "raw_content": null
+    },
+    {
+      "title": "2 BHK Flats for rent in Chennai | NoBroker",
+      "url": "https://www.nobroker.in/2bhk-flats-for-rent-in-chennai_chennai",
+      "content": "NoBroker reports that typical 2 BHK rent in Chennai ranges from about Rs 3,000 to Rs 15,000 per month, depending on locality, furnishing and building category. The page cites July 2026 market data and notes that prices vary by society type, building age and amenities.",
+      "score": 0.61,
+      "raw_content": null
+    }
+  ],
+  "response_time": "1.42",
+  "request_id": "7f3c9a2e-5b1d-4e8a-9c60-2d4f1a8b7e13"
+}
