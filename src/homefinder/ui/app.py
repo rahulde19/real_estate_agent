@@ -19,7 +19,7 @@ st.markdown("Tell us about your move and we'll find PGs and flats on the web, th
             "listings and explains the result. Every option shows where it came from and how sure we are.")
 if DEMO_MODE:
     st.info(f"**Demo.** This uses a saved Chennai search, not a live one, and the form is prefilled with an example: just press "
-            f"*Find my home*. Limits: {DEMO_SESSION_RUNS} runs per visit, {DEMO_DAILY_RUNS} per day.")
+            "*Find my home*.")
 elif SEARCH_SOURCE != "live":
     st.caption("Sample search mode: saved data covers Chennai only. Set SEARCH_SOURCE=live for other cities.")
 
