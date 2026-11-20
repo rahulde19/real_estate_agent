@@ -38,6 +38,8 @@ data/run_log.jsonl         one line per app run: calls, tokens, seconds (git-ign
 evals/golden/              golden set for the evaluation phase: pages.json (42 pages with answer keys), profiles.json, README.md (how the keys were made), review.md
 tests/
 ```
+**Live demo**: https://realestateagent-fpkc5mkc5tgmpsmd3w6ins.streamlit.app/
+
 **Deploying the demo (Streamlit Community Cloud)**: push the repository to GitHub, create an app there with main file `streamlit_app.py` (it adds `src/` to the import path, so the package need not be installed), Python 3.11 or newer, and put the keys in the app's Secrets box, never in the repository:
 
 ```

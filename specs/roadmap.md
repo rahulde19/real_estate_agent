@@ -221,12 +221,12 @@ Goal: a public repository and a live demo that someone can open from a portfolio
 - [x] UI polish for a first-time visitor: prefilled example (Taramani), what the app does in two lines, a demo notice with the data date. Checked with Streamlit's test harness only, not looked at in a browser; the confidence and closest-miss sections were not changed
 
 ### 9.3 Deploy
-- [ ] Deploy on Streamlit Community Cloud with keys in its secrets store (prepared: `streamlit_app.py` entry point, `uv.lock` regenerated, steps in `docs/README.md`; needs the user to push to GitHub and create the app, which I cannot do)
+- [x] Deploy on Streamlit Community Cloud with keys in its secrets store (done 21-11: https://realestateagent-fpkc5mkc5tgmpsmd3w6ins.streamlit.app/, main file `streamlit_app.py`, `GEMINI_API_KEY`, `MODEL`, `DEMO_MODE` in the Secrets box)
 - [x] GitHub Actions: run the offline tests on every push (`.github/workflows/tests.yml`; its install-and-test steps passed in a clean local venv with no keys, but the workflow itself has not run on GitHub yet)
-- [ ] Smoke-test the deployed app end to end
+- [x] Smoke-test the deployed app end to end (21-11: one demo run with the prefilled example returned a suggestion, 2 options and the commute note; 1 Gemini call). Not yet checked: the per-session limit and the daily limit on the hosted app, the Actions run on GitHub, other browsers or a phone
 
 ### 9.4 Portfolio write-up
-- [ ] README for a reader with two minutes: the problem, a screenshot or short clip, the architecture diagram, "LLM interprets, code decides", the evaluation table from 8.7, known limits
-- [ ] A short "what I would do next" section taken from the list below
+- [x] README for a reader with two minutes (`README.md` at the root): the problem, a screenshot of the live demo, "LLM interprets, code decides", an evaluation table built from the baseline run (there is no 8.7 report), known limits. The architecture diagram stays in `docs/architecture.md` and is linked, not embedded
+- [x] A short "what I would do next" section taken from the list below (also names prompt-injection and failure-handling tests, which were dropped from Phase 8)
 
 ---
