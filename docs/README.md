@@ -18,6 +18,7 @@ cp .env.example .env        # add GEMINI_API_KEY (and MODEL); TAVILY_API_KEY onl
 ```
 decision/decision.md        log of design decisions
 specs/                      constitution: mission.md, tech-stack.md, roadmap.md (phase order)
+docs/workflow_and_design.md complete workflow and design reference (one run end to end, formulas, modes, evals)
 docs/response1/             worked example: LLM input and cutoff/score arithmetic for one run
 data/                       livingcost_india_all_inr.csv: city cost of living (source: livingcost.org)
 data/homefinder.db           saved search results and extractions (created on first run, git-ignored)

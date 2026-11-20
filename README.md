@@ -17,7 +17,7 @@ form → web search → LLM #1 reads pages into listings → code: merge duplica
 - **LLM #2** only explains the ranked result in plain English, using the facts it is given.
 - Honest about uncertainty: unknown values score neutral, lower a confidence tag that is shown, and defaults are labelled as assumptions. Every option shows its sources. If fewer than 7 pass, the closest misses are listed with the one limit each failed.
 
-Architecture diagram and the node table: [docs/architecture.md](docs/architecture.md).
+Architecture diagram and the node table: [docs/architecture.md](docs/architecture.md). Full workflow and design reference: [docs/workflow_and_design.md](docs/workflow_and_design.md).
 
 ## How it was checked
 

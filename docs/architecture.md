@@ -1,6 +1,6 @@
 # Architecture
 
-_Last updated: 2026-11-16. Next steps (evaluation and safety, then shipping) are in `specs/roadmap.md`; the multi-agent design is optional work after shipping. Keep this file in sync with the code whenever structure or flow changes._
+_Last updated: 2026-11-16. Next steps (evaluation and safety, then shipping) are in `specs/roadmap.md`; the multi-agent design is optional work after shipping. Keep this file in sync with the code whenever structure or flow changes. The long-form walkthrough is `docs/workflow_and_design.md`._
 
 ## Flow
 
@@ -94,6 +94,7 @@ The city is a required `UserProfile.city` (editable in the UI, default "Chennai"
 decision/decision.md      design decision log
 specs/                    constitution: mission, tech-stack, roadmap (planned phases)
 docs/architecture.md      this file
+docs/workflow_and_design.md  full workflow and design reference
 src/homefinder/
   config/                 config.py (paths, env, rulebook loader), rulebook.toml (weights, money, liquidity, [scoring], [lifestyle], [decision], [defaults], [confidence], [dedup], [staleness], [source_values], [evidence]), rulebook.md
   schemas.py              UserProfile, Listing, Provenance, EvidenceItem, ListingBatch
